@@ -106,5 +106,6 @@ public class SeleniumMethod {
 		a.getText();
 		a.sendKeys("gjh");
 		a.accept();
+		a.notify();
 	}
 }

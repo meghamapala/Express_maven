@@ -33,7 +33,6 @@ public class SeleniumMethod {
 		String pwin=dr.getWindowHandle();
 		Actions a=new Actions(dr);
 		a.contextClick(null).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ARROW_DOWN).sendKeys(Keys.ENTER);
-		
 		Set<String> cwin=dr.getWindowHandles();
 		for(String win:cwin) {
 			if(!win.equals(pwin)) {
@@ -106,5 +105,6 @@ public class SeleniumMethod {
 		a.dismiss();
 		a.getText();
 		a.sendKeys("gjh");
+		a.accept();
 	}
 }
